@@ -1,0 +1,58 @@
+.contact-page {
+    height: 100%;
+}
+
+.contact-terminal {
+    background: rgba(0,0,0,0.1);
+    padding: 20px;
+    border: 2px solid var(--text-color);
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+}
+
+.terminal-line {
+    margin: 2px 0;
+    font-size: 14px;
+}
+
+.contact-link {
+    display: block;
+    color: var(--primary);
+    text-decoration: none;
+    font-family: var(--font-header);
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.contact-link:hover {
+    color: var(--secondary);
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+}
+
+.social-links {
+    margin-left: 20px;
+}
+
+.input-area {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    border-top: 2px dashed var(--text-color);
+    padding-top: 10px;
+}
+
+.retro-input {
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    font-family: var(--font-body);
+    font-size: 16px;
+    margin-left: 10px;
+    outline: none;
+    width: 100%;
+}
+
+.blinking-cursor {
+    animation: blink 1s infinite;
+}
