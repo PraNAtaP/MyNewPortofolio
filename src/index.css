@@ -1,33 +1,28 @@
-/* Google Fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
 
 :root {
-  /* Common */
   --font-header: 'Press Start 2P', cursive;
   --font-body: 'VT323', monospace;
-  
-  /* GameBoy Theme (Light) */
+
   --gb-darkest: #0f380f;
   --gb-dark: #306230;
   --gb-light: #8bac0f;
   --gb-lightest: #9bbc0f;
-  
-  /* Arcade Theme (Dark) */
+
   --arc-bg: #222222;
   --arc-text: #ffffff;
-  --arc-primary: #ff00cc; /* Neon Pink */
-  --arc-secondary: #00ffff; /* Neon Cyan */
-  --arc-accent: #ffff00; /* Yellow */
+  --arc-primary: #ff00cc;
+  --arc-secondary: #00ffff;
+  --arc-accent: #ffff00;
 
-  /* Default Theme: GameBoy */
   --bg-color: var(--gb-lightest);
   --text-color: var(--gb-darkest);
   --primary: var(--gb-dark);
   --secondary: var(--gb-darkest);
   --accent: var(--gb-light);
-  
+
   --scanline-opacity: 0.1;
-  --pixel-size: 4px; /* For box-shadow simulation */
+  --pixel-size: 4px;
 }
 
 [data-theme='dark'] {
@@ -47,11 +42,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--font-body);
-  background-color: #000; /* Outer void */
+  background-color: #000;
   color: var(--text-color);
-  image-rendering: pixelated; /* Crucial for retro look */
+  image-rendering: pixelated;
   -webkit-font-smoothing: none;
-  overflow: hidden; /* App handles scrolling within the "screen" */
+  overflow: hidden;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -68,19 +63,18 @@ body {
   align-items: center;
 }
 
-/* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 12px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--bg-color); 
+  background: var(--bg-color);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--primary); 
+  background: var(--primary);
   border: 2px solid var(--bg-color);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--secondary); 
+  background: var(--secondary);
 }
 
 @keyframes blink {

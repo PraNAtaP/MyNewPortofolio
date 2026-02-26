@@ -34,6 +34,12 @@
     margin-left: 20px;
 }
 
+.social-link-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .input-area {
     margin-top: auto;
     display: flex;

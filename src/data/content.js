@@ -1,4 +1,3 @@
-
 export const portfolioData = {
   personal: {
     name: "Pranata Putrandana",
@@ -9,19 +8,20 @@ export const portfolioData = {
     class: "Front-End Dev",
     stats: {
       hp: 100,
-      mp: 100
-    }
+      mp: 100,
+    },
   },
   about: {
     title: "THE DETECTIVE",
     narrative: [
-      "Bagi saya, pengembangan perangkat lunak bukan sekadar menulis kode, melainkan sebuah proses investigasi. Layaknya memecahkan kasus misteri, saya menikmati tantangan dalam menelusuri akar masalah, merangkai logika yang kompleks, dan menemukan solusi yang paling efisien.",
-      "Saya adalah seorang fast learner yang selalu lapar akan teknologi baru. Saat ini, fokus utama saya adalah mendalami ekosistem Go (Golang) dan Google Cloud Platform untuk memperluas kapabilitas saya dalam membangun sistem yang scalable dan reliable."
-    ]
+      "For me, software development is not just writing code — it is an investigation. Like solving a mystery case, I thrive on the challenge of tracing root causes, assembling complex logic, and discovering the most efficient solution.",
+      "I am a fast learner with an insatiable hunger for new technology. My current focus is diving deep into the Go (Golang) ecosystem and Google Cloud Platform to expand my capabilities in building scalable and reliable systems.",
+    ],
   },
   goals: {
     title: "MISSION OBJECTIVE",
-    description: "Ambisi saya adalah melangkah ke panggung global, dengan fokus khusus untuk berkontribusi pada industri IT di Australia. Saya berdedikasi untuk menghadirkan kualitas kode standar internasional—bersih, terstruktur, dan performan.",
+    description:
+      "My ambition is to step onto the global stage, with a dedicated focus on contributing to Australia's IT industry. I am committed to delivering international-standard code quality — clean, well-structured, and performant.",
   },
   experience: [
     {
@@ -30,39 +30,74 @@ export const portfolioData = {
       role: "Front-End Developer",
       duration: "Current",
       type: "MAIN QUEST",
-      description: "Memimpin pengembangan fitur sisi klien untuk Pro Bros Delivery App.",
+      image: "/placeholder.png",
+      description:
+        "Leading client-side feature development for the Pro Bros Delivery App.",
       tech: "React Native, Client-Side Logic",
       details: [
-        "Mengembangkan Pro Bros Delivery App menggunakan React Native.",
-        "Mengelola CRM untuk operasional bisnis yang efisien.",
-        "Memastikan performa aplikasi stabil dan responsif di sisi client."
-      ]
-    }
+        "Building the Pro Bros Delivery App using React Native.",
+        "Managing the CRM for streamlined business operations.",
+        "Ensuring stable and responsive app performance on the client side.",
+      ],
+    },
+    {
+      id: 2,
+      company: "JuaraGCP",
+      role: "Participant",
+      duration: "Current",
+      type: "SIDE QUEST",
+      image: "/placeholder.png",
+      description:
+        "Completed multiple Google Cloud skill badges, gaining hands-on experience with cloud infrastructure and services.",
+      tech: "Google Cloud Platform",
+      details: [
+        "Earned skill badges in core GCP services and architecture.",
+        "Explored cloud computing fundamentals including Compute Engine, Cloud Storage, and IAM.",
+        "Applied best practices for building and deploying cloud-native applications.",
+      ],
+    },
+    {
+      id: 3,
+      company: "Politeknik Negeri Malang",
+      role: "Information Technology Student",
+      duration: "In Progress",
+      type: "TRAINING ARC",
+      image: "/placeholder.png",
+      description:
+        "Pursuing a degree in Information Technology with a focus on practical, industry-ready software development.",
+      tech: "Java, PHP, Laravel, Flutter, React",
+      details: [
+        "Building a solid foundation in algorithms, data structures, and OOP.",
+        "Developing full-stack web and mobile applications as academic projects.",
+        "Gaining exposure to database design, networking, and software engineering principles.",
+      ],
+    },
   ],
   skills: {
     core: [
       { name: "React Native", exp: 90 },
-      { name: "Flutter", exp: 85 },
-      { name: "Laravel", exp: 80 },
-      { name: "Go (Golang)", exp: 75 }
+      { name: "React", exp: 90 },
+      { name: "Flutter", exp: 80 },
+      { name: "Laravel", exp: 60 },
+      { name: "Go (Golang)", exp: 40 },
     ],
     web: [
       { name: "CSS / Modern UI", exp: 90 },
       { name: "PHP", exp: 85 },
-      { name: "Java GUI", exp: 70 }
+      { name: "Java GUI", exp: 70 },
     ],
     tools: [
       { name: "VS Code", exp: 100 },
       { name: "Git", exp: 90 },
-      { name: "Google Cloud", exp: 75 }
-    ]
+      { name: "Google Cloud", exp: 50 },
+    ],
   },
   contact: {
-    email: "hello@pranata.dev", // Placeholder, user didn't provide specific email but typical format
+    email: "pranatapu08@gmail.com",
     social: {
-      github: "#",
-      linkedin: "#",
-      twitter: "#"
-    }
-  }
+      github: "https://github.com/PraNAtaP",
+      linkedin: "https://www.linkedin.com/in/pranatap/",
+      instagram: "https://www.instagram.com/naprana_/",
+    },
+  },
 };

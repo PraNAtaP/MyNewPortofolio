@@ -1,22 +1,23 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect } from "react";
 
 const ThemeContext = createContext();
 
+/** @type {React.FC<{ children: React.ReactNode }>} */
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState(() => {
-    // Check localStorage or default to 'light' (GameBoy)
-    return localStorage.getItem('retro-theme') || 'light';
-  });
+  const [theme, setTheme] = useState(
+    () => localStorage.getItem("retro-theme") || "light"
+  );
 
   useEffect(() => {
-    // Determine the data-theme attribute value
-    const themeValue = theme === 'dark' ? 'dark' : 'light';
-    document.documentElement.setAttribute('data-theme', themeValue);
-    localStorage.setItem('retro-theme', theme);
+    document.documentElement.setAttribute(
+      "data-theme",
+      theme === "dark" ? "dark" : "light"
+    );
+    localStorage.setItem("retro-theme", theme);
   }, [theme]);
 
   const toggleTheme = () => {
-    setTheme(prev => prev === 'light' ? 'dark' : 'light');
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
   };
 
   return (
@@ -26,4 +27,5 @@ export const ThemeProvider = ({ children }) => {
   );
 };
 
+/** @returns {{ theme: string, toggleTheme: () => void }} */
 export const useTheme = () => useContext(ThemeContext);

@@ -1,0 +1,123 @@
+.tutorial-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 10000;
+    padding: 30px;
+}
+
+.tutorial-dialogue {
+    width: 100%;
+    max-width: 700px;
+    background: var(--bg-color);
+    border: 4px solid var(--primary);
+    padding: 20px;
+    position: relative;
+    box-shadow:
+        8px 8px 0 rgba(0, 0, 0, 0.3),
+        inset 0 0 0 2px var(--bg-color),
+        inset 0 0 0 4px var(--secondary);
+    margin-bottom: 40px;
+    animation: dialogue-enter 0.3s ease-out;
+}
+
+.dialogue-speaker {
+    font-family: var(--font-header);
+    font-size: 10px;
+    color: var(--bg-color);
+    background: var(--primary);
+    display: inline-block;
+    padding: 4px 10px;
+    position: absolute;
+    top: -14px;
+    left: 15px;
+    letter-spacing: 1px;
+}
+
+.dialogue-text {
+    font-family: var(--font-body);
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-color);
+    min-height: 60px;
+    padding-top: 5px;
+}
+
+.dialogue-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    border-top: 2px dashed var(--text-color);
+    padding-top: 10px;
+}
+
+.dialogue-step {
+    font-family: var(--font-header);
+    font-size: 8px;
+    opacity: 0.6;
+}
+
+.dialogue-advance {
+    font-family: var(--font-header);
+    font-size: 10px;
+    color: var(--primary);
+    background: transparent;
+    border: 2px solid var(--primary);
+    padding: 6px 14px;
+    cursor: pointer;
+    transition: all 0.15s;
+    letter-spacing: 1px;
+}
+
+.dialogue-advance:hover {
+    background: var(--primary);
+    color: var(--bg-color);
+}
+
+.dialogue-indicator {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    font-size: 14px;
+    color: var(--primary);
+    animation: bounce-indicator 0.6s infinite alternate;
+}
+
+@keyframes bounce-indicator {
+    from { transform: translateY(0); }
+    to { transform: translateY(5px); }
+}
+
+@keyframes dialogue-enter {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+[data-theme='dark'] .tutorial-dialogue {
+    box-shadow:
+        0 0 20px var(--arc-primary),
+        8px 8px 0 rgba(0, 0, 0, 0.5),
+        inset 0 0 0 2px var(--bg-color),
+        inset 0 0 0 4px var(--arc-secondary);
+}
+
+[data-theme='dark'] .dialogue-advance:hover {
+    box-shadow: 0 0 10px var(--arc-primary);
+}
+
+[data-theme='dark'] .dialogue-indicator {
+    text-shadow: 0 0 5px var(--arc-primary);
+}
