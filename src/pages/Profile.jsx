@@ -13,7 +13,7 @@ const Profile = () => {
           <div className="avatar-frame">
             <div className="pixel-avatar">
               <img
-                src="/profile.jpg"
+                src="/profile.png"
                 alt="Profile"
                 className="pixel-avatar-img"
               />

@@ -25,12 +25,11 @@
     image-rendering: pixelated;
 }
 
-/* 8-bit Sun construction using box-shadows */
 .icon-sun {
     width: 12px;
     height: 12px;
     background-color: var(--gb-darkest);
-    box-shadow: 
+    box-shadow:
         0 -4px 0 var(--gb-darkest),
         0 4px 0 var(--gb-darkest),
         -4px 0 0 var(--gb-darkest),
@@ -43,7 +42,6 @@
     border-radius: 2px;
 }
 
-/* 8-bit Moon construction */
 .icon-moon {
     width: 14px;
     height: 14px;
@@ -63,4 +61,32 @@
 [data-theme='dark'] .theme-toggle-btn {
     color: var(--arc-secondary);
     text-shadow: 0 0 2px var(--arc-secondary);
+}
+
+@media (max-width: 480px) {
+    .theme-toggle-btn {
+        padding: 5px;
+        gap: 3px;
+    }
+
+    .pixel-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .icon-sun {
+        width: 10px;
+        height: 10px;
+        margin: 5px;
+    }
+
+    .icon-moon {
+        width: 12px;
+        height: 12px;
+        margin: 4px;
+    }
+
+    .toggle-label {
+        font-size: 8px;
+    }
 }

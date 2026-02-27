@@ -21,6 +21,7 @@
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  flex-shrink: 0;
 }
 
 .pixel-avatar {
@@ -29,14 +30,14 @@
   background-color: var(--secondary);
   border: 4px solid var(--text-color);
   box-shadow: 4px 4px 0 rgba(0,0,0,0.2);
-  overflow: hidden; /* Ensure image doesn't bleed */
+  overflow: hidden;
 }
 
 .pixel-avatar-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  image-rendering: pixelated; /* Optional: adds to retro vibe if image is low res */
+  image-rendering: pixelated;
 }
 
 .level-badge {
@@ -45,10 +46,12 @@
   background: var(--primary);
   color: var(--bg-color);
   padding: 4px;
+  white-space: nowrap;
 }
 
 .stats-panel {
   flex: 1;
+  min-width: 0;
 }
 
 .player-name {
@@ -56,6 +59,7 @@
   font-size: 16px;
   margin: 0 0 15px 0;
   color: var(--primary);
+  word-break: break-word;
 }
 
 .stat-row {
@@ -68,10 +72,12 @@
 .stat-label {
   width: 60px;
   opacity: 0.8;
+  flex-shrink: 0;
 }
 
 .stat-value {
   font-weight: bold;
+  word-break: break-word;
 }
 
 .hp-bar-container, .mp-bar-container {
@@ -80,10 +86,11 @@
   background: #333;
   border: 2px solid var(--text-color);
   margin-left: 10px;
+  min-width: 0;
 }
 
 .hp-bar-fill {
-  background: #ff0000; /* Classic HP Red */
+  background: #ff0000;
   height: 100%;
 }
 
@@ -92,7 +99,6 @@
   height: 100%;
 }
 
-/* Theme overrides for bars */
 [data-theme='light'] .hp-bar-fill {
   background: var(--gb-dark);
 }
@@ -119,9 +125,60 @@
   border-bottom: 2px solid var(--accent);
   padding-bottom: 10px;
   margin-bottom: 15px;
+  word-break: break-word;
 }
 
 .typewriter-text p {
   margin-bottom: 10px;
   line-height: 1.4;
+}
+
+@media (max-width: 600px) {
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+    border-width: 3px;
+  }
+
+  .pixel-avatar {
+    width: 64px;
+    height: 64px;
+    border-width: 3px;
+  }
+
+  .player-name {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .stat-row {
+    font-size: 13px;
+  }
+
+  .stat-label {
+    width: 45px;
+    font-size: 12px;
+  }
+
+  .bio-section {
+    padding: 12px;
+    border-width: 3px;
+  }
+
+  .section-title {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 380px) {
+  .player-name {
+    font-size: 10px;
+  }
+
+  .level-badge {
+    font-size: 8px;
+  }
 }

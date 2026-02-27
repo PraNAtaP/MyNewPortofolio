@@ -11,7 +11,7 @@
     background-color: #ddd;
     padding: 30px;
     border-radius: 10px 10px 40px 10px;
-    box-shadow: 
+    box-shadow:
         inset -5px -5px 10px rgba(0,0,0,0.2),
         10px 10px 20px rgba(0,0,0,0.5);
     max-width: 800px;
@@ -21,7 +21,6 @@
     flex-direction: column;
 }
 
-/* Dark mode device color (Arcade Cabinet style) */
 [data-theme='dark'] .game-device {
     background-color: #1a1a1a;
     border: 4px solid var(--arc-primary);
@@ -42,7 +41,7 @@
 .screen-container {
     background-color: var(--bg-color);
     width: 100%;
-    height: 60vh; /* Fixed height for scrollable content */
+    height: 60vh;
     border: 4px solid #333;
     position: relative;
     overflow: hidden;
@@ -115,7 +114,6 @@
     box-shadow: 0 0 5px #0f0;
 }
 
-/* Scrollbar customization for the inner screen */
 .content-scroll::-webkit-scrollbar {
     width: 8px;
 }
@@ -130,4 +128,77 @@
     0% { opacity: 0.08; }
     50% { opacity: 0.1; }
     100% { opacity: 0.08; }
+}
+
+@media (max-width: 768px) {
+    .game-wrapper {
+        padding: 0;
+        align-items: stretch;
+    }
+
+    .game-device {
+        padding: 8px;
+        border-radius: 0;
+        max-width: 100%;
+        height: 100vh;
+        box-shadow: none;
+    }
+
+    [data-theme='dark'] .game-device {
+        border-width: 2px;
+        box-shadow: none;
+    }
+
+    .screen-bezel {
+        padding: 8px;
+        border-radius: 0;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .screen-container {
+        height: auto;
+        flex: 1;
+        border-width: 2px;
+    }
+
+    .content-scroll {
+        padding: 12px;
+    }
+
+    .bezel-controls {
+        margin-top: 8px;
+        padding: 0 4px;
+    }
+
+    .brand-logo {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .power-indicator {
+        top: 12px;
+        left: 12px;
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .game-device {
+        padding: 4px;
+    }
+
+    .screen-bezel {
+        padding: 4px;
+    }
+
+    .content-scroll {
+        padding: 10px;
+    }
+
+    .brand-logo {
+        font-size: 8px;
+    }
 }

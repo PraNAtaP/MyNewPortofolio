@@ -26,7 +26,19 @@ const IntroScreen = () => {
       </div>
 
       <div className="hero-sprite">
-        <div className="sprite-pixels"></div>
+        <div className="sprite-pixels">
+          <svg
+            viewBox="0 0 16 16"
+            fill="var(--bg-color)"
+            className="play-icon"
+          >
+            <rect x="4" y="2" width="2" height="12" />
+            <rect x="6" y="3" width="2" height="10" />
+            <rect x="8" y="4" width="2" height="8" />
+            <rect x="10" y="5" width="2" height="6" />
+            <rect x="12" y="6" width="2" height="4" />
+          </svg>
+        </div>
       </div>
 
       <div className={`start-text ${blink ? "visible" : "hidden"}`}>

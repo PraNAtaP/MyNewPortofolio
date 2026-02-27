@@ -2,13 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 import useRetroSound from "../hooks/useRetroSound";
 import GameTutorial from "../components/ui/GameTutorial";
+import {
+  PixelPlayer,
+  PixelSword,
+  PixelScroll,
+  PixelComms,
+  PixelController,
+} from "../components/ui/PixelMenuIcons";
 import "./MainMenu.css";
 
 const MENU_ITEMS = [
-  { label: "PLAYER INFO", path: "/about", icon: "👤" },
-  { label: "SKILL TREE", path: "/skills", icon: "⚔" },
-  { label: "QUEST LOG", path: "/projects", icon: "📜" },
-  { label: "COMMS CH", path: "/contact", icon: "📡" },
+  { label: "PLAYER INFO", path: "/about", icon: <PixelPlayer size={20} /> },
+  { label: "SKILL TREE", path: "/skills", icon: <PixelSword size={20} /> },
+  { label: "QUEST LOG", path: "/projects", icon: <PixelScroll size={20} /> },
+  { label: "PRODUCTS", path: "/products", icon: <PixelController size={20} /> },
+  { label: "COMMS CH", path: "/contact", icon: <PixelComms size={20} /> },
 ];
 
 const MainMenu = () => {

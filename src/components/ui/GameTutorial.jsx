@@ -11,7 +11,7 @@ const TUTORIAL_STEPS = [
   },
   {
     speaker: "SYSTEM.NPC",
-    text: "Use the MAIN MENU to navigate: PLAYER INFO for stats, SKILL TREE for abilities, QUEST LOG for missions, and COMMS CH to make contact.",
+    text: "Use the MAIN MENU to navigate: PLAYER INFO for stats, SKILL TREE for abilities, QUEST LOG for missions, PRODUCTS for built items, and COMMS CH to make contact.",
   },
   {
     speaker: "SYSTEM.NPC",

@@ -30,6 +30,8 @@
     border-bottom: 2px dashed var(--text-color);
     padding-bottom: 8px;
     margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .quest-type {
@@ -42,12 +44,14 @@
     font-family: var(--font-header);
     font-size: 12px;
     color: var(--primary);
+    word-break: break-word;
 }
 
 .quest-status {
     font-size: 10px;
     padding: 2px 4px;
     border: 1px solid currentColor;
+    white-space: nowrap;
 }
 
 .quest-status.complete {
@@ -84,6 +88,7 @@
 
 .quest-info {
     flex: 1;
+    min-width: 0;
 }
 
 .quest-desc-text {
@@ -112,6 +117,7 @@
     margin-top: 10px;
     border-top: 1px dashed var(--text-color);
     padding-top: 8px;
+    word-break: break-word;
 }
 
 .quest-action {
@@ -127,4 +133,47 @@
 .quest-action:hover {
     background: var(--primary);
     color: var(--bg-color);
+}
+
+@media (max-width: 480px) {
+    .quest-card {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .quest-card:hover {
+        transform: translateX(3px);
+    }
+
+    .quest-type {
+        font-size: 8px;
+    }
+
+    .quest-title {
+        font-size: 10px;
+    }
+
+    .quest-body {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .quest-image {
+        width: 48px;
+        height: 48px;
+        border-width: 2px;
+    }
+
+    .quest-desc-text {
+        font-size: 13px;
+    }
+
+    .quest-details {
+        padding-left: 15px;
+        font-size: 13px;
+    }
+
+    .quest-rewards {
+        font-size: 11px;
+    }
 }

@@ -30,7 +30,7 @@ export const portfolioData = {
       role: "Front-End Developer",
       duration: "Current",
       type: "MAIN QUEST",
-      image: "/placeholder.png",
+      image: "/",
       description:
         "Leading client-side feature development for the Pro Bros Delivery App.",
       tech: "React Native, Client-Side Logic",
@@ -92,6 +92,48 @@ export const portfolioData = {
       { name: "Google Cloud", exp: 50 },
     ],
   },
+  products: [
+    {
+      id: 1,
+      name: "Pro Bros Delivery App",
+      platform: "MOBILE",
+      image: "/placeholder.png",
+      description:
+        "A delivery management app built for Pro Bros Providore, handling driver workflows, QR attendance, and real-time order tracking.",
+      tech: ["React Native", "REST API", "QR Code"],
+      link: "",
+    },
+    {
+      id: 2,
+      name: "Pro Bros CRM",
+      platform: "WEB",
+      image: "/placeholder.png",
+      description:
+        "A full-featured CRM dashboard for managing sales pipelines, contacts, deals, commissions, and activity logs.",
+      tech: ["React", "Vite", "Laravel", "Tailwind CSS"],
+      link: "",
+    },
+    {
+      id: 3,
+      name: "Restaurant App",
+      platform: "MOBILE",
+      image: "/placeholder.png",
+      description:
+        "A restaurant discovery app with search, reviews, favorites, and dark mode — built with clean architecture and Provider state management.",
+      tech: ["Flutter", "Dart", "Provider", "REST API"],
+      link: "",
+    },
+    {
+      id: 4,
+      name: "Retro Portfolio",
+      platform: "WEB",
+      image: "/placeholder.png",
+      description:
+        "This very site! A retro game-themed portfolio with GameBoy and Arcade visual modes, pixel-art UI, and 8-bit sound effects.",
+      tech: ["React", "Vite", "CSS Pixel Art"],
+      link: "",
+    },
+  ],
   contact: {
     email: "pranatapu08@gmail.com",
     social: {

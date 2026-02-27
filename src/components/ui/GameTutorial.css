@@ -4,6 +4,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
+    height: 100dvh;
     background: rgba(0, 0, 0, 0.75);
     display: flex;
     justify-content: center;
@@ -47,6 +48,7 @@
     color: var(--text-color);
     min-height: 60px;
     padding-top: 5px;
+    word-break: break-word;
 }
 
 .dialogue-footer {
@@ -56,6 +58,8 @@
     margin-top: 15px;
     border-top: 2px dashed var(--text-color);
     padding-top: 10px;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 .dialogue-step {
@@ -120,4 +124,43 @@
 
 [data-theme='dark'] .dialogue-indicator {
     text-shadow: 0 0 5px var(--arc-primary);
+}
+
+@media (max-width: 480px) {
+    .tutorial-overlay {
+        padding: 10px;
+        align-items: center;
+    }
+
+    .tutorial-dialogue {
+        padding: 15px;
+        margin-bottom: 0;
+        border-width: 3px;
+        box-shadow:
+            4px 4px 0 rgba(0, 0, 0, 0.3),
+            inset 0 0 0 1px var(--bg-color),
+            inset 0 0 0 3px var(--secondary);
+    }
+
+    .dialogue-speaker {
+        font-size: 8px;
+        padding: 3px 8px;
+        top: -12px;
+        left: 10px;
+    }
+
+    .dialogue-text {
+        font-size: 15px;
+        min-height: 45px;
+        line-height: 1.5;
+    }
+
+    .dialogue-advance {
+        font-size: 9px;
+        padding: 5px 10px;
+    }
+
+    .dialogue-step {
+        font-size: 7px;
+    }
 }

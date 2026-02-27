@@ -7,6 +7,7 @@ import MainMenu from './pages/MainMenu';
 import Profile from './pages/Profile';
 import SkillTree from './pages/SkillTree';
 import Projects from './pages/Projects';
+import ProductShowcase from './pages/ProductShowcase';
 import Contact from './pages/Contact';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path="/about" element={<Profile />} />
             <Route path="/skills" element={<SkillTree />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/products" element={<ProductShowcase />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
