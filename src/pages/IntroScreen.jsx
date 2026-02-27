@@ -22,7 +22,7 @@ const IntroScreen = () => {
     <div className="intro-screen" onClick={handleStart}>
       <div className="title-block">
         <h1 className="title-main">PORTFOLIO</h1>
-        <h2 className="title-sub">ADVANCE</h2>
+        <h2 className="title-sub">Pranata</h2>
       </div>
 
       <div className="hero-sprite">

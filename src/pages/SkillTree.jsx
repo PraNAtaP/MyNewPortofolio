@@ -31,7 +31,7 @@ const SkillTree = () => {
                 </div>
 
                 <div className="skill-category">
-                    <h3 className="category-title">WEB DEV</h3>
+                    <h3 className="category-title">SIDE TECH</h3>
                     <div className="skills-grid">
                         {portfolioData.skills.web.map((skill, idx) => (
                             <div className="skill-item" key={`web-${idx}`}>

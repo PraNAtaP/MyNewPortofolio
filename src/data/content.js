@@ -1,14 +1,14 @@
 export const portfolioData = {
   personal: {
     name: "Pranata Putrandana",
-    role: "Front-End Developer",
+    role: "Full Stack Developer | Mobile Developer",
     campus: "Politeknik Negeri Malang",
     currentJob: "Front-End Dev @ Pro Bros Providore",
-    level: 99,
-    class: "Front-End Dev",
+    level: 50,
+    class: "Full Stack Dev | Mobile Dev",
     stats: {
       hp: 100,
-      mp: 100,
+      mp: 50,
     },
   },
   about: {
@@ -30,10 +30,10 @@ export const portfolioData = {
       role: "Front-End Developer",
       duration: "Current",
       type: "MAIN QUEST",
-      image: "/",
+      image: "/probros.png",
       description:
         "Leading client-side feature development for the Pro Bros Delivery App.",
-      tech: "React Native, Client-Side Logic",
+      tech: "React Native, Client-Side Logic, Laravel, React",
       details: [
         "Building the Pro Bros Delivery App using React Native.",
         "Managing the CRM for streamlined business operations.",
@@ -46,7 +46,7 @@ export const portfolioData = {
       role: "Participant",
       duration: "Current",
       type: "SIDE QUEST",
-      image: "/placeholder.png",
+      image: "/juaragcp.png",
       description:
         "Completed multiple Google Cloud skill badges, gaining hands-on experience with cloud infrastructure and services.",
       tech: "Google Cloud Platform",
@@ -62,7 +62,7 @@ export const portfolioData = {
       role: "Information Technology Student",
       duration: "In Progress",
       type: "TRAINING ARC",
-      image: "/placeholder.png",
+      image: "/polinema.png",
       description:
         "Pursuing a degree in Information Technology with a focus on practical, industry-ready software development.",
       tech: "Java, PHP, Laravel, Flutter, React",
@@ -76,13 +76,13 @@ export const portfolioData = {
   skills: {
     core: [
       { name: "React Native", exp: 90 },
-      { name: "React", exp: 90 },
       { name: "Flutter", exp: 80 },
       { name: "Laravel", exp: 60 },
       { name: "Go (Golang)", exp: 40 },
     ],
     web: [
       { name: "CSS / Modern UI", exp: 90 },
+      { name: "Tailwind CSS", exp: 80 },
       { name: "PHP", exp: 85 },
       { name: "Java GUI", exp: 70 },
     ],
@@ -97,7 +97,7 @@ export const portfolioData = {
       id: 1,
       name: "Pro Bros Delivery App",
       platform: "MOBILE",
-      image: "/placeholder.png",
+      image: "/deliveryapp.png",
       description:
         "A delivery management app built for Pro Bros Providore, handling driver workflows, QR attendance, and real-time order tracking.",
       tech: ["React Native", "REST API", "QR Code"],
@@ -107,7 +107,7 @@ export const portfolioData = {
       id: 2,
       name: "Pro Bros CRM",
       platform: "WEB",
-      image: "/placeholder.png",
+      image: "/crmweb.png",
       description:
         "A full-featured CRM dashboard for managing sales pipelines, contacts, deals, commissions, and activity logs.",
       tech: ["React", "Vite", "Laravel", "Tailwind CSS"],
@@ -117,7 +117,7 @@ export const portfolioData = {
       id: 3,
       name: "Restaurant App",
       platform: "MOBILE",
-      image: "/placeholder.png",
+      image: "/restaurantapp.png",
       description:
         "A restaurant discovery app with search, reviews, favorites, and dark mode — built with clean architecture and Provider state management.",
       tech: ["Flutter", "Dart", "Provider", "REST API"],
@@ -127,10 +127,20 @@ export const portfolioData = {
       id: 4,
       name: "Retro Portfolio",
       platform: "WEB",
-      image: "/placeholder.png",
+      image: "/retroweb.png",
       description:
         "This very site! A retro game-themed portfolio with GameBoy and Arcade visual modes, pixel-art UI, and 8-bit sound effects.",
       tech: ["React", "Vite", "CSS Pixel Art"],
+      link: "",
+    },
+    {
+      id: 5,
+      name: "InLET Website Project",
+      platform: "WEB",
+      image: "/inletweb.png",
+      description:
+        "A website for InLET, a Lab in Politeknik Negeri Malang that provides services in the field of information technology and learning.",
+      tech: ["HTML", "CSS", "PHP", "Java Script"],
       link: "",
     },
   ],
