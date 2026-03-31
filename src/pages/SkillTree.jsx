@@ -10,58 +10,16 @@ const SkillTree = () => {
         <div className="skill-tree-page">
             <BackButton />
             
-            <h2 className="section-header">SKILL MASTERY</h2>
+            <h2 className="section-header">TECH STACK</h2>
             
             <div className="skills-container-scroll">
-                <div className="skill-category">
-                    <h3 className="category-title">CORE TECH</h3>
-                    <div className="skills-grid">
-                        {portfolioData.skills.core.map((skill, idx) => (
-                            <div className="skill-item" key={`core-${idx}`}>
-                                <div className="skill-info">
-                                    <span className="skill-name">{skill.name}</span>
-                                    <span className="skill-exp">{skill.exp}%</span>
-                                </div>
-                                <div className="exp-bar-frame">
-                                    <div className="exp-bar-fill" style={{ width: `${skill.exp}%` }}></div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-                <div className="skill-category">
-                    <h3 className="category-title">SIDE TECH</h3>
-                    <div className="skills-grid">
-                        {portfolioData.skills.web.map((skill, idx) => (
-                            <div className="skill-item" key={`web-${idx}`}>
-                                <div className="skill-info">
-                                    <span className="skill-name">{skill.name}</span>
-                                    <span className="skill-exp">{skill.exp}%</span>
-                                </div>
-                                <div className="exp-bar-frame">
-                                    <div className="exp-bar-fill" style={{ width: `${skill.exp}%` }}></div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-                <div className="skill-category">
-                    <h3 className="category-title">TOOLS</h3>
-                    <div className="skills-grid">
-                        {portfolioData.skills.tools.map((skill, idx) => (
-                            <div className="skill-item" key={`tools-${idx}`}>
-                                <div className="skill-info">
-                                    <span className="skill-name">{skill.name}</span>
-                                    <span className="skill-exp">{skill.exp}%</span>
-                                </div>
-                                <div className="exp-bar-frame">
-                                    <div className="exp-bar-fill" style={{ width: `${skill.exp}%` }}></div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+                <div className="skills-grid">
+                    {portfolioData.skills.map((skill, idx) => (
+                        <div className="skill-item-logo" key={`skill-${idx}`}>
+                            <img src={skill.icon} alt={skill.name} className="skill-icon" />
+                            <span className="skill-name">{skill.name}</span>
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>
